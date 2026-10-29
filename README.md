@@ -2,7 +2,7 @@
 
 한국어 머신러닝 수업을 위한 독립형 학습 사이트입니다. 회귀·분류·군집·웹 크롤링을 **개념 → 시뮬레이션 → Python 코드와 실행 결과 → 퀴즈** 순서로 학습합니다.
 
-- 학생용 사이트: https://ml-learning-lab-taupe.vercel.app
+- 학생용 사이트: https://ml-learning-lab-jiminxchris.vercel.app
 - 소스: https://github.com/jiminxchris/ml-learning-lab
 - 교사용 진행안: [public/classroom-guide.md](public/classroom-guide.md)
 - 구현·검증 기준: [docs/implementation.md](docs/implementation.md)

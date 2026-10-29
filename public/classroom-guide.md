@@ -1,6 +1,6 @@
 # ML Studio 교사용 수업 진행안
 
-학생용 사이트: https://ml-learning-lab-taupe.vercel.app
+학생용 사이트: https://ml-learning-lab-jiminxchris.vercel.app
 
 수업은 정답을 먼저 알려주기보다 **예측해 보기 → 설정 한 가지만 바꾸기 → 결과 관찰 → 이유 말하기 → 코드 확인 → 퀴즈** 순서로 진행합니다. 학습 시간 표시는 한 단원에서 설명·실험·퀴즈를 포함한 권장 시간이며, 모든 단원을 하루에 마칠 필요는 없습니다.
 
