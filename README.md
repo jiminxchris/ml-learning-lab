@@ -2,7 +2,7 @@
 
 한국어 머신러닝 수업을 위한 독립형 학습 사이트입니다. 회귀·분류·군집·웹 크롤링을 **개념 → 시뮬레이션 → Python 코드와 실행 결과 → 퀴즈** 순서로 학습합니다.
 
-- 학생용 사이트: https://ml-learning-lab-jiminxchris.vercel.app
+- 학생용 사이트: https://ml-learning-lab-chrislin.vercel.app
 - 소스: https://github.com/jiminxchris/ml-learning-lab
 - 교사용 진행안: [public/classroom-guide.md](public/classroom-guide.md)
 - 구현·검증 기준: [docs/implementation.md](docs/implementation.md)
@@ -62,6 +62,7 @@ pip install numpy pandas scikit-learn matplotlib scipy requests beautifulsoup4 s
 | `src/interpretations.js` | 실행 결과 해석 |
 | `src/App.jsx` | 탐색·퀴즈·진도·노트 |
 | `src/styles.css` | 반응형 디자인 |
+| `src/reading.css` | 화면별 글자 크기와 읽기 간격 |
 
 기존 수업의 노트북을 수정하거나 전체 업로드하지 않고 이 프로젝트만 별도 저장소로 관리합니다.
 

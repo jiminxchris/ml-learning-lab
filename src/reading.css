@@ -1,0 +1,577 @@
+/* Shared type hierarchy across the home, lessons and experiments. */
+:root {
+  --text-caption: 11px;
+  --text-ui: 12px;
+  --text-body: 14px;
+  --text-reading: 15px;
+  --text-card: 16px;
+  --text-section: 23px;
+  --text-page: 31px;
+}
+
+.topbar {
+  height: 64px;
+}
+.home-page,
+.lesson-page,
+.utility-page {
+  padding-top: 24px;
+}
+.hero {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  min-height: 310px;
+}
+.hero h1 {
+  font-size: clamp(30px, 2.6vw, 40px);
+  line-height: 1.45;
+  margin-top: 16px;
+}
+.hero p {
+  font-size: var(--text-body);
+  line-height: 1.9;
+}
+.hero .eyebrow,
+.eyebrow,
+.sidebar-label {
+  font-size: 10px;
+}
+.hero-actions > span,
+.hero-chart-label,
+.hero-chart-footer,
+.track-card-top,
+.floating-chip,
+.brand small {
+  font-size: var(--text-caption);
+}
+.hero-chart-label,
+.hero-chart-footer {
+  font-size: 8px;
+}
+.track-card-top {
+  font-size: 9px;
+}
+.hero-actions .btn,
+.hero-btn,
+.btn,
+.closing-note > .btn {
+  font-size: var(--text-ui);
+}
+.brand small {
+  font-size: 10px;
+}
+.nav-home,
+.nav-group-title,
+.sidebar-tools {
+  font-size: var(--text-ui);
+}
+.nav-lesson {
+  font-size: 12px;
+  line-height: 1.65;
+}
+.breadcrumb,
+.course-tag,
+.top-progress,
+.welcome-strip > div,
+.section-heading > span {
+  font-size: var(--text-ui);
+}
+.sidebar-bottom > span,
+.sidebar-bottom small,
+.site-footer {
+  font-size: var(--text-caption);
+}
+
+.section-heading h2,
+.section-intro h2 {
+  font-size: var(--text-section);
+  line-height: 1.55;
+}
+.track-card h3 {
+  font-size: 26px;
+}
+.track-card p,
+.lesson-card p,
+.closing-note p {
+  font-size: 13px;
+  line-height: 1.85;
+}
+.track-card p {
+  min-height: 48px;
+}
+.track-card small,
+.lesson-card-meta,
+.lesson-card-bottom {
+  font-size: var(--text-caption);
+}
+.lesson-card h3 {
+  font-size: var(--text-card);
+  line-height: 1.65;
+}
+.lesson-card {
+  min-height: 214px;
+}
+.closing-note h3 {
+  font-size: 15px;
+}
+.search-box input,
+.filter-tabs button {
+  font-size: var(--text-ui);
+}
+.search-box input {
+  width: 160px;
+}
+
+.lesson-heading h1,
+.utility-page > h1 {
+  font-size: var(--text-page);
+  line-height: 1.5;
+}
+.lesson-heading > p,
+.page-lead,
+.section-intro p {
+  font-size: var(--text-body);
+  line-height: 1.9;
+}
+.lesson-overline,
+.track-pill {
+  font-size: var(--text-caption);
+}
+.lesson-tabs > button {
+  font-size: 13px;
+}
+.lesson-mission > span {
+  font-size: var(--text-ui);
+}
+.lesson-mission > p {
+  font-size: var(--text-body);
+}
+.concept-step h2 {
+  font-size: 21px;
+  line-height: 1.6;
+}
+.concept-step p {
+  font-size: var(--text-reading);
+  line-height: 1.95;
+}
+.example-box {
+  font-size: 13px;
+  line-height: 1.9;
+}
+.example-box > span,
+.formula-card > span {
+  font-size: var(--text-caption);
+}
+.watchout strong {
+  font-size: 13px;
+}
+.watchout p {
+  font-size: 13px;
+  line-height: 1.95;
+}
+.lesson-pagination button {
+  font-size: var(--text-ui);
+}
+.lesson-pagination small {
+  font-size: var(--text-caption);
+}
+
+.experiment-top,
+.experiment-top > span:first-child {
+  font-size: 10px;
+}
+.control-heading,
+.control,
+.control select,
+.controls > .btn,
+.toggle,
+.step-readout {
+  font-size: var(--text-ui);
+}
+.control strong {
+  font-size: 13px;
+}
+.control small,
+.tiny-note,
+.lab-footnote,
+.stat > span,
+.stat small,
+.legend,
+.cluster-counts,
+.small-title {
+  font-size: var(--text-caption);
+}
+.control > span {
+  align-items: flex-start;
+}
+.control > span > strong {
+  flex-shrink: 0;
+}
+.tiny-note {
+  line-height: 1.85;
+}
+.stat strong {
+  font-size: 22px;
+}
+.stat > span {
+  line-height: 1.6;
+}
+.insight {
+  font-size: 13px;
+  line-height: 1.9;
+}
+table {
+  font-size: var(--text-ui);
+}
+.comparison-bars h4,
+.comparison-bars button,
+.comparison-bars strong {
+  font-size: var(--text-caption);
+}
+.observation > label {
+  font-size: 13px;
+}
+.observation > p,
+.observation small {
+  font-size: var(--text-caption);
+}
+.observation textarea {
+  font-size: 14px;
+}
+.problem-flow h3 {
+  font-size: 23px;
+}
+.problem-flow > p,
+.flow-nodes {
+  font-size: 13px;
+}
+.problem-option {
+  font-size: 13px;
+}
+.muted {
+  font-size: var(--text-ui);
+}
+.contribution > div,
+.contribution strong,
+.coefficients strong,
+.coefficients > div:not(:first-child),
+.profiles > div,
+.profiles strong,
+.formula-inline {
+  font-size: var(--text-ui);
+}
+.profiles small {
+  font-size: var(--text-caption);
+}
+.matrix-label {
+  font-size: 13px;
+}
+.matrix-label span,
+.matrix,
+.matrix small {
+  font-size: var(--text-caption);
+}
+.fold-grid span {
+  font-size: 9px;
+}
+.fold-grid strong {
+  font-size: 13px;
+}
+
+.code-block {
+  font-size: 13px;
+}
+.code-toolbar,
+.code-toolbar .btn,
+.setup-note strong,
+.setup-note > p,
+.source-note strong,
+.source-note p,
+.output-version,
+.verified-output > small {
+  font-size: var(--text-caption);
+}
+.setup-note > code {
+  font-size: var(--text-ui);
+}
+.verified-output > pre {
+  font-size: var(--text-ui);
+}
+.output-reading strong {
+  font-size: var(--text-ui);
+}
+.output-reading p {
+  font-size: var(--text-body);
+}
+.quiz-card legend {
+  font-size: 17px;
+}
+.quiz-option,
+.answer-feedback p {
+  font-size: var(--text-body);
+}
+.quiz-card legend > span,
+.option-letter,
+.quiz-progress > span,
+.answer-feedback strong {
+  font-size: var(--text-caption);
+}
+.completed-banner strong {
+  font-size: 15px;
+}
+.completed-banner p {
+  font-size: var(--text-ui);
+}
+.review-card h3,
+.glossary-card h3 {
+  font-size: var(--text-card);
+}
+.review-card p,
+.glossary-card p {
+  font-size: var(--text-body);
+}
+.review-links button,
+.reference-links a,
+.progress-tracks > div > span {
+  font-size: 13px;
+}
+.privacy-note,
+.summary-cards span {
+  font-size: var(--text-ui);
+}
+
+.crawl-title,
+.crawl-title small,
+.selector-presets button,
+.selector-input,
+.selector-input code,
+.editor-label,
+.selected-node code,
+.selected-node small,
+.crawl-stat span,
+.dynamic-actions,
+.response-tabs button,
+.api-controls label {
+  font-size: var(--text-caption);
+}
+.selector-input input,
+.result-heading,
+.selected-node p,
+.request-flow,
+.mock-browser article p,
+.api-controls select,
+.leak-banner {
+  font-size: 13px;
+}
+.crawl-stat strong {
+  font-size: 20px;
+}
+.sample-response,
+.html-editor {
+  font-size: var(--text-ui);
+}
+.mock-browser article small {
+  font-size: var(--text-caption);
+}
+
+@media (max-width: 1150px) {
+  .hero {
+    min-height: 290px;
+  }
+  .hero p {
+    font-size: 13px;
+  }
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+  .hero-actions > span {
+    white-space: normal;
+  }
+  .experiment-body {
+    grid-template-columns: 205px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .nav-lesson {
+    font-size: 13px;
+  }
+  .track-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .lesson-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .welcome-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .controls {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --text-body: 13px;
+    --text-reading: 14px;
+    --text-card: 15px;
+    --text-section: 21px;
+    --text-page: 27px;
+  }
+  .topbar {
+    height: 56px;
+  }
+  .home-page,
+  .lesson-page,
+  .utility-page {
+    padding-top: 18px;
+  }
+  .breadcrumb,
+  .top-progress {
+    font-size: 11px;
+  }
+  .hero {
+    padding-top: 27px;
+    padding-bottom: 24px;
+    min-height: 0;
+  }
+  .hero h1 {
+    font-size: 30px;
+    line-height: 1.5;
+  }
+  .hero p {
+    font-size: 12px;
+  }
+  .hero .eyebrow {
+    font-size: 8px;
+  }
+  .hero-actions > span {
+    display: none;
+  }
+  .track-card {
+    padding: 18px 14px;
+  }
+  .track-card-top {
+    font-size: 8px;
+  }
+  .track-card h3 {
+    font-size: 24px;
+  }
+  .track-card p {
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .lesson-card {
+    padding: 16px 12px 13px;
+    min-height: 220px;
+  }
+  .lesson-card p {
+    font-size: 12px;
+  }
+  .lesson-card-meta,
+  .lesson-card-bottom {
+    font-size: 10px;
+    gap: 5px;
+  }
+  .lesson-card-meta > span:first-child {
+    gap: 4px;
+  }
+  .lesson-card-meta > span:last-child {
+    flex-shrink: 0;
+  }
+  .lesson-card-bottom > span {
+    gap: 4px;
+  }
+  .lesson-tabs > button {
+    font-size: 12px;
+  }
+  .lesson-overline,
+  .track-pill {
+    font-size: 10px;
+  }
+  .concept-step h2 {
+    font-size: 19px;
+  }
+  .example-box,
+  .watchout p {
+    font-size: 12px;
+  }
+  .experiment-top > span:last-child {
+    font-size: 9px;
+  }
+  .experiment-top > span:first-child {
+    font-size: 9px;
+  }
+  .experiment-body {
+    display: flex;
+  }
+  .controls {
+    gap: 20px 15px;
+  }
+  .control,
+  .control select,
+  .controls > .btn {
+    font-size: 11px;
+  }
+  .control strong {
+    font-size: 12px;
+  }
+  .tiny-note,
+  .lab-footnote {
+    font-size: 11px;
+  }
+  .stat {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .stat > span,
+  .stat small {
+    font-size: 10px;
+  }
+  .stat strong {
+    font-size: 19px;
+  }
+  .insight {
+    font-size: 12px;
+  }
+  .code-block {
+    font-size: 12px;
+  }
+  .code-toolbar,
+  .code-toolbar .btn {
+    font-size: 10px;
+  }
+  .setup-note > code,
+  .verified-output > pre {
+    font-size: 11px;
+  }
+  .quiz-card legend {
+    font-size: 16px;
+  }
+  .quiz-option,
+  .answer-feedback p {
+    font-size: 13px;
+  }
+  .quiz-card legend > span {
+    font-size: 10px;
+  }
+  .crawl-title,
+  .crawl-title small {
+    font-size: 10px;
+  }
+  .crawl-stat strong {
+    font-size: 16px;
+  }
+  .crawl-stat span {
+    font-size: 10px;
+  }
+  .selector-input input,
+  .selector-input code {
+    max-width: 100%;
+  }
+  .dynamic-actions,
+  .response-tabs button {
+    font-size: 11px;
+  }
+}
