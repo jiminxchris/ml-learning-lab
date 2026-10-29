@@ -39,6 +39,13 @@ export function ols(points) {
   const slope = den ? sum(points.map((p) => (p[0] - mx) * (p[1] - my))) / den : 0;
   return { slope, intercept: my - slope * mx };
 }
+export function linearGradientStep(points, slope, intercept, rate = 0.12) {
+  const residuals = points.map((p) => slope * p[0] + intercept - p[1]);
+  return {
+    slope: slope - rate * 2 * mean(residuals.map((v, i) => v * points[i][0])),
+    intercept: intercept - rate * 2 * mean(residuals),
+  };
+}
 export function syntheticRegression(seed = 42, n = 80) {
   const r = rng(seed);
   return Array.from({ length: n }, (_, i) => {

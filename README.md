@@ -19,6 +19,8 @@
 
 25개 단원에 75개 퀴즈와 해설이 있습니다. 퀴즈 세 문제를 모두 맞히면 해당 단원이 완료됩니다. 오답 복습, 관찰 노트, 코드 복사·다운로드, 기록 JSON 내보내기를 지원합니다. 모바일에서도 사용할 수 있습니다.
 
+회귀·분류·군집의 실험 11개에는 자동 재생·일시정지·한 단계·처음부터·0.5/1/2배속이 있습니다. 회귀 경사하강의 MSE 기록, KMeans 실제 중심 갱신과 관성 기록, DBSCAN 한 점의 eps 이웃 탐험, KNN 새 점 드래그, 덴드로그램 절단선 이동을 제공합니다. 설정 비교 재생과 학습 반복을 화면에서 구분합니다. 다른 탭으로 전환하면 재생을 멈추며, 운영체제의 움직임 줄이기 설정을 반영합니다.
+
 ## 로컬 실행
 
 Node.js 22 이상을 권장합니다.
@@ -63,6 +65,7 @@ pip install numpy pandas scikit-learn matplotlib scipy requests beautifulsoup4 s
 | `src/App.jsx` | 탐색·퀴즈·진도·노트 |
 | `src/styles.css` | 반응형 디자인 |
 | `src/reading.css` | 화면별 글자 크기와 읽기 간격 |
+| `src/Motion.jsx` · `src/motion.css` | 재생 제어·좌표 전환·단계별 기록 |
 
 기존 수업의 노트북을 수정하거나 전체 업로드하지 않고 이 프로젝트만 별도 저장소로 관리합니다.
 
@@ -85,6 +88,8 @@ python -X utf8 tests/live-python.py
 ```bash
 node tests/browser-check.mjs
 ```
+
+재생·정지·속도·수렴·드래그와 움직임 줄이기 설정은 `node tests/motion-check.mjs`로 확인합니다. 로컬 서버 주소가 다르면 `QA_URL` 환경변수를 지정합니다.
 
 검증 스크린샷과 임시 파일은 `.qa/`에 저장하며 Git에 포함하지 않습니다. Chrome이 필요합니다. 수학 테스트는 손으로 확인 가능한 예제와 scikit-learn PCA 참조값을 사용합니다.
 

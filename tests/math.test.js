@@ -4,6 +4,24 @@ import { readFileSync } from 'node:fs';
 import * as M from '../src/math.js';
 import { lessons, tracks, glossary } from '../src/course.js';
 const near = (a, b, tol = 1e-7) => assert.ok(Math.abs(a - b) < tol, `${a} differs from ${b}`);
+test('gradient updates reduce MSE and approach the OLS solution', () => {
+  const points = M.syntheticRegression().filter((p) => p[2] === 'train'),
+    optimal = M.ols(points);
+  let slope = 1.2,
+    intercept = 0.4,
+    previous = Infinity;
+  for (let i = 0; i < 120; i++) {
+    const mse = M.regressionMetrics(
+      points.map((p) => p[1]),
+      points.map((p) => slope * p[0] + intercept),
+    ).mse;
+    assert.ok(mse <= previous + 1e-12);
+    previous = mse;
+    ({ slope, intercept } = M.linearGradientStep(points, slope, intercept));
+  }
+  near(slope, optimal.slope, 0.0002);
+  near(intercept, optimal.intercept, 0.0002);
+});
 test('OLS recovers a known line and metrics expose poor predictions', () => {
   const fit = M.ols([
     [0, 3],
