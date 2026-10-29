@@ -1,0 +1,30 @@
+{
+  "python": "3.13.15",
+  "sklearn": "1.9.1",
+  "date": "2026-10-29",
+  "outputs": {
+    "api": "aptNm  excluUseAr  dealAmount\n0  학습아파트        84.9       60000",
+    "collection-model": "평균 기준\nMAE(만원): 13564\nRMSE(만원): 15869\nR²: -0.026\n선형회귀\nMAE(만원): 4013\nRMSE(만원): 5221\nR²: 0.889",
+    "dbscan": "군집 수: 2 잡음 수: 0\n잡음 제외 실루엣: 0.31809933367391185",
+    "hierarchy": "0    71\n1    49\n2    30\nName: count, dtype: int64",
+    "kchoice": "2 222.36170496502308 0.5817500491982808\n3 139.8204963597498 0.45994823920518635\n4 114.09254690403088 0.38694104154427816\n5 90.92751382392052 0.3459012795948778\n6 81.54439095511783 0.31707940193569023",
+    "kmeans": "sepal length (cm)  ...  petal width (cm)\ncluster                     ...                  \n0                 5.801887  ...          1.413208\n1                 5.006000  ...          0.246000\n2                 6.780851  ...          1.972340\n\n[3 rows x 4 columns]\n관성: 139.8204963597498",
+    "knn": "precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00        10\n           1       0.83      1.00      0.91        10\n           2       1.00      0.80      0.89        10\n\n    accuracy                           0.93        30\n   macro avg       0.94      0.93      0.93        30\nweighted avg       0.94      0.93      0.93        30",
+    "linear": "MSE: 0.5266948367230766\nR2: 0.8017962776877292\n새 값 예측: [1.36087519]",
+    "logistic": "[[0.979 0.021 0.   ]\n [0.004 0.369 0.627]\n [0.149 0.842 0.009]]\n              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00        10\n           1       0.90      0.90      0.90        10\n           2       0.90      0.90      0.90        10\n\n    accuracy                           0.93        30\n   macro avg       0.93      0.93      0.93        30\nweighted avg       0.93      0.93      0.93        30",
+    "metrics": "[[95  0]\n [ 5  0]]\n              precision    recall  f1-score   support\n\n           0       0.95      1.00      0.97        95\n           1       0.00      0.00      0.00         5\n\n    accuracy                           0.95       100\n   macro avg       0.47      0.50      0.49       100\nweighted avg       0.90      0.95      0.93       100",
+    "multiple": "[10.]",
+    "pca": "설명분산비: [0.72962445 0.22850762]",
+    "pipeline": "{'model__max_depth': 2, 'model__n_estimators': 100}\n              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00        10\n           1       0.82      0.90      0.86        10\n           2       0.89      0.80      0.84        10\n\n    accuracy                           0.90        30\n   macro avg       0.90      0.90      0.90        30\nweighted avg       0.90      0.90      0.90        30",
+    "polynomial": "train 0.09027685738905343\ntest 0.06434375266946249",
+    "profile": "food  retail  service  cluster\nA  0.80    0.10      0.1        2\nB  0.80    0.10      0.1        2\nC  0.20    0.70      0.1        0\nD  0.20    0.70      0.1        0\nE  0.25    0.15      0.6        1\nF  0.25    0.15      0.6        1\n         food  retail  service\ncluster                       \n0        0.20    0.70      0.1\n1        0.25    0.15      0.6\n2        0.80    0.10      0.1",
+    "projects": "datetime  count  month  dayofweek  hour  log_count  restored\n0 2026-01-01 08:00:00     10      1          3     8   2.397895      10.0\n1 2026-01-03 18:00:00   1000      1          5    18   6.908755    1000.0",
+    "question": "입력 모양: (120, 4)\n정답 이름: ['setosa' 'versicolor' 'virginica']",
+    "regularization": "Ridge 0.09534931863545637\n계수: [ 2.44925647  0.04079751 -0.87021803  0.02339436 -0.66932278 -0.04253822\n -0.0743172  -0.01884787  0.40946907]\nLasso 0.10541239295375654\n계수: [ 2.40311085  0.         -1.17015991  0.         -0.         -0.\n -0.         -0.         -0.        ]",
+    "scale": "[-0. -0.  0.  0.]\n(30, 4)",
+    "selectors": "첫 명언: 작은 실험에서 큰 이해가 시작됩니다.\n[{'text': '작은 실험에서 큰 이해가 시작됩니다.', 'author': '학습자 A'}, {'text': '관찰한 결과를 자기 말로 설명해 보세요.', 'author': '학습자 B'}]",
+    "split": "학습: 120 테스트: 30\n테스트 품종별 수: [10 10 10]",
+    "tree": "precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00        10\n           1       1.00      0.90      0.95        10\n           2       0.91      1.00      0.95        10\n\n    accuracy                           0.97        30\n   macro avg       0.97      0.97      0.97        30\nweighted avg       0.97      0.97      0.97        30\n\n{'sepal length (cm)': np.float64(0.0), 'sepal width (cm)': np.float64(0.0), 'petal length (cm)': np.float64(0.5790772828399291), 'petal width (cm)': np.float64(0.42092271716007074)}",
+    "validation": "{'model__n_neighbors': 3} 0.9665359477124185\n              precision    recall  f1-score   support\n\n           0       1.00      1.00      1.00        10\n           1       0.83      1.00      0.91        10\n           2       1.00      0.80      0.89        10\n\n    accuracy                           0.93        30\n   macro avg       0.94      0.93      0.93        30\nweighted avg       0.94      0.93      0.93        30"
+  }
+}
